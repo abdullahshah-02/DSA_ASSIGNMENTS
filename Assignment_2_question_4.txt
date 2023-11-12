@@ -1,0 +1,34 @@
+Assignment 2
+Question 4
+
+Q4: How can you use two stacks to implement a queue? Provide a step-by-step explanation of the
+ enqueue and dequeue operations in this scenario.
+
+Solution:
+
+You can use two stacks to implement a queue. Let's call the two stacks stack1 and stack2. Here are the
+ steps for enqueue and dequeue operations:
+
+*Enqueue Operation:*
+1. Push the new element onto stack1.
+
+*Dequeue Operation:*
+1. If both stack1 and stack2 are empty, return an error message.
+2. If stack2 is empty, pop all elements from stack1 and push them onto stack2.
+3. Pop the top element from stack2 and return it.
+
+Here's how the enqueue and dequeue operations work in this scenario:
+
+1. Suppose we want to enqueue the element 5 into the queue. We push 5 onto stack1.
+2. Suppose we want to enqueue the element 7 into the queue. We push 7 onto stack1.
+3. Suppose we want to dequeue an element from the queue. We check if stack2 is empty. Since it is empty, we pop all
+elements from stack1 and push them onto stack2. Now stack2 contains the elements in reverse order, so the top element
+of stack2 is the first element that was pushed onto stack1, which is 5. We pop 5 from stack2 and return it.
+4. Suppose we want to enqueue the element 9 into the queue. We push 9 onto stack1.
+5. Suppose we want to dequeue an element from the queue. We check if stack2 is empty. Since it is not empty, we pop the
+ top element from stack2 and return it. The top element of stack2 is 7, which was the second element that was pushed
+ onto stack1.
+
+Using two stacks to implement a queue can be useful in certain situations, such as when you have limited memory
+available or when you need to implement a queue using a stack data structure.
+

@@ -1,0 +1,25 @@
+Assignment 2
+Question 3
+
+Q3: Discuss the time complexity of enqueue and dequeue operations in a basic queue.
+How can you optimize these operations for specific use cases?
+
+Solution:
+
+The time complexity of enqueue and dequeue operations in a basic queue depends on the implementation of the queue.
+
+ If the queue is implemented using an array, the time complexity of both operations is O(1) .
+ If the queue is implemented using a linked list, the time complexity of both operations is O(1) as well .
+To optimize these operations for specific use cases, you can use a circular queue. A circular queue is a
+variation of a queue data structure in which the last element is connected to the first element to make a circle.
+ This makes it possible to use the spaces that are left empty after a dequeue operation. In a circular queue,
+ the enqueue and dequeue operations can be performed in O(1) time complexity .
+Another way to optimize these operations is to use a priority queue. A priority queue is a type of queue in
+ which each element is assigned a priority and is dequeued based on its priority. The elements with higher
+ priority are dequeued first. The time complexity of enqueue and dequeue operations in a priority queue depends
+ on the implementation of the priority queue. If the priority queue is implemented using a heap, the time complexity
+ of both operations is O(log n).
+In conclusion, the time complexity of enqueue and dequeue operations in a basic queue is O(1) for both array and
+linked list implementations. To optimize these operations for specific use cases, you can use a circular queue or
+a priority queue.
+
